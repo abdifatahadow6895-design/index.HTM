@@ -14,5 +14,20 @@
 // function (steps, firstName) {
 //   console.log( firstName + " is moving " + steps + " steps");
 // };
-setTimeout(move, 10000, 20,"Abdi")
+// setTimeout(move, 10000, 20,"Abdi")
 // move(20,"Abdi")
+
+
+
+// function sayMyName() {
+//     console.log("Hello ", + "Abdifatah" )
+// }
+
+// let sayMyName = () => {
+//     console.log("Hello " + "Abdifatah");
+// }
+
+// sayMyName()
+
+
+
