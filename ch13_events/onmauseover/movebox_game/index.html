@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Keyboard Event Cool Demo</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial;
+      transition: 0.3s;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    #box {
+      width: 100px;
+      height: 100px;
+      background: blue;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+      transition: 0.1s;
+    }
+
+    #keyDisplay {
+      font-size: 24px;
+      margin-top: 20px;
+      color: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Press Any Key 🎹</h1>
+  <p>Use Arrow Keys to Move the Box</p>
+  <div id="keyDisplay">Key: None</div>
+
+  <div id="box"></div>
+
+  <script>
+    let box = document.getElementById("box");
+    let keyDisplay = document.getElementById("keyDisplay");
+
+    let x = 200;
+    let y = 200;
+
+    document.addEventListener("keydown", function(event) {
+
+      // Show pressed key
+      keyDisplay.textContent = "Key: " + event.key;
+
+      // Change background color randomly
+      document.body.style.backgroundColor =
+        "rgb(" +
+        Math.floor(Math.random() * 255) + "," +
+        Math.floor(Math.random() * 255) + "," +
+        Math.floor(Math.random() * 255) + ")";
+
+      // Move box with arrow keys
+      if (event.key === "ArrowRight") {
+        x += 20;
+      }
+      if (event.key === "ArrowLeft") {
+        x -= 20;
+      }
+      if (event.key === "ArrowUp") {
+        y -= 20;
+      }
+      if (event.key === "ArrowDown") {
+        y += 20;
+      }
+
+      box.style.left = x + "px";
+      box.style.top = y + "px";
+    });
+  </script>
+
+</body>
+</html>

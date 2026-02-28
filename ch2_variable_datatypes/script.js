@@ -23,3 +23,19 @@
 // console.log(typeof house) undefined
 // var firstName = "Abdifatah"
 // console.log( typeof firstName)
+// let firstName = "Abdifatah"
+// let lastName = "Adow"
+// let age = 20
+// console.log(firstName + " " + lastName)
+// let married = false
+// console.log(typeof married)
+
+let person = {
+    name: "Abbdifath",
+    placeBirth: "Kenya",
+    shaqada: "teacher",
+    age: 23,
+    height: 1.6,
+    heIsMilionire: false,
+}
+console.log(person)

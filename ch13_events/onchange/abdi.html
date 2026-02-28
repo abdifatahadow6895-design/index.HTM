@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  <h2>Type Your Name</h2>
+
+  <input type="text" id="nameInput" onchange="showName()">
+
+  <p id="result"></p>
+
+  <script>
+    function showName() {
+      let name = document.getElementById("nameInput").value;
+      document.getElementById("result").textContent = "Hello " + name;
+    }
+  </script>
+
+</body>
+</html>

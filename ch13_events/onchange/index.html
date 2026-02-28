@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>onchange Example</title>
+</head>
+<body>
+
+  <h2>Select Background Color</h2>
+
+  <select id="colorSelect" onchange="changeColor()">
+    <option value="">Choose Color</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="yellow">Yellow</option>
+  </select>
+
+  <script>
+    function changeColor() {
+      let color = document.getElementById("colorSelect").value;
+      document.body.style.backgroundColor = color;
+    }
+  </script>
+
+</body>
+</html>
