@@ -1,14 +1,14 @@
-// function behaviorPromise(isWellBehaved) {
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (isWellBehaved) {
-//         resolve("You behevd well! Here is your phone next week.");
-//       } else {
-//         reject("You didn't behaved well! so no phone this time");
-//       }
-//     }, 5000);
-//   });
-// }
+function behaviorPromise(isWellBehaved) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (isWellBehaved) {
+        resolve("You behaved well! Here is your phone next week.");
+      } else {
+        reject("You didn't behaved well! so no phone this time");
+      }
+    }, 5000);
+  });
+}
 
 // const myPromise = new Promise((resolve, reject) => {
 //   let success = true;
@@ -98,21 +98,21 @@
 //   })
 //   .catch((error) => {
 //     console.log(error);
-//   });
+// //   });
 
-let examPassed = true
-const myPromise = new Promise((resolve, reject) => {
-    if (examPassed) {
-        resolve("You passed exam")
-    } else {
-        reject("You failed exam")
-    }
+// let examPassed = true
+// const myPromise = new Promise((resolve, reject) => {
+//     if (examPassed) {
+//         resolve("You passed exam")
+//     } else {
+//         reject("You failed exam")
+//     }
 
-})
+// })
 
-myPromise.then((result) => {
-    console.log(result)
-})
-.catch((error) => {
-    console.log(error)
-})
+// myPromise.then((result) => {
+//     console.log(result)
+// })
+// .catch((error) => {
+//     console.log(error)
+// })
